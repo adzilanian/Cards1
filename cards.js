@@ -98,14 +98,17 @@ $(function () {
     $("#btnStart").click(function () {
         for (let i = 0; i < 6; i++) {
             player1.push(deck.pop());
-            $(".cardsOfPlayer1").append("<img id=" + i + "card1 src=\"img/" + player1[i].rank + "_" + player1[i].suit + ".svg\">");
+            $(".cardsOfPlayer1").append('<img id="' + 'card1_' + i + '" src="img/' + player1[i].rank + '_' + player1[i].suit + '.svg">');
             player2.push(deck.pop());
-            $(".cardsOfPlayer2").append("<img id=" + i + "card2 src=\"img/" + player2[i].rank + "_" + player2[i].suit + ".svg\">");
+            $(".cardsOfPlayer2").append('<img id="' + 'card2_' + i + '" src="img/' + player2[i].rank + '_' + player2[i].suit + '.svg">');
         }
         mainSuit = deck[deck.length - 1].suit;
 
     });
 
+    $("body").on("click","#card1_0",function () {
+        console.log("Priwet!!");
+    });
 
 
     //Обработка хода первого игрока
