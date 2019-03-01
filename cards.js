@@ -153,7 +153,7 @@ $(function () {
 
 });
 
-
+//Перемешивает колоду кард перед раздачей
 function mess() {
     let count = 0;
     while (count !== deck.length) {
