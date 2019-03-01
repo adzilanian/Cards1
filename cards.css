@@ -1,0 +1,15 @@
+body {
+    background-image: url("img/background.jpg");
+    background-size: 100%;
+}
+
+img {
+    max-width: 55px;
+    max-height: 75px;
+    cursor: pointer;
+    left: 100px;
+
+
+
+}
+
